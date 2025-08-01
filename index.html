@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login with Strava</title></head>
+<body>
+  <button onclick="login()">Login with Strava</button>
+  <p id="code"></p>
+
+  <script>
+    function login() {
+      const url = '/auth/strava';
+      const popup = window.open(url, 'Strava Login', 'width=600,height=600');
+
+      window.addEventListener('message', (event) => {
+        if (event.origin !== window.location.origin) return;
+        document.getElementById('code').innerText = 'Authorization code: ' + event.data.code;
+      });
+    }
+  </script>
+</body>
+</html>

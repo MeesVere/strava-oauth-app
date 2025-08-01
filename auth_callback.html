@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get('code');
+  window.opener.postMessage({ code }, window.location.origin);
+  window.close();
+</script>
+</body>
+</html>
