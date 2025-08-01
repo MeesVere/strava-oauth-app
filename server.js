@@ -5,7 +5,7 @@ const app = express();
 
 const CLIENT_ID = '170549';
 const CLIENT_SECRET = '170549';
-const REDIRECT_URI = 'https://your-app.fly.dev/auth_callback';
+const REDIRECT_URI = 'https://strava-oauth-app.onrender.com/auth_callback';
 
 app.use(express.static(path.join(__dirname)));
 
