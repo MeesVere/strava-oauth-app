@@ -4,8 +4,8 @@ const axios = require('axios');
 const app = express();
 
 const CLIENT_ID = '170549';
-const CLIENT_SECRET = '170549';
-const REDIRECT_URI = 'https://strava-oauth-app.onrender.com/auth_callback';
+const CLIENT_SECRET = '0daae66e992ed1123432e2d0bd4ade71c46754cf';
+const REDIRECT_URI = 'http://gedemodev.siggis.be/vertigisstudio/web/?app=52b8763a24944b35a145d976ce11fac9';
 
 app.use(express.static(path.join(__dirname)));
 
